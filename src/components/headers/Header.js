@@ -4,16 +4,17 @@ import Logo from './Logo';
 import Menu from './Menu';
 import UserContainer from './UserContainer';
 
-class  Header extends React.Component{
-  render() {
+const  Header = ({setModalBox}) => {
+
     return(
       <div className='header'>
         <Logo/>
         <Menu/>
-        <UserContainer/>
+        <UserContainer setModalBox={setModalBox}/>
       </div>
     )
-  }
+
 }
 
 export default Header;
+
